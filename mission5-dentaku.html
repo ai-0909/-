@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>dentaku</title>
+  <link rel="stylesheet" href="mission5-dentaku.css">
+</head>
+
+<body>
+
+      <form name="dentaku">
+        <table>
+          <tr>
+            <td colspan="4">
+              <input type="text" class="display" name="display" value="" disabled>
+              </td>
+        </tr>
+
+
+          <tr>
+            <td><input type="button" value="7" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="8" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="9" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="÷" class="operator" name="div_btn" onclick="get_calc(this)"></td>
+          </tr>
+        
+          <tr>
+            <td><input type="button" value="4" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="5" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="6" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="×" class="operator" name="multi_btn" onclick="get_calc(this)"></td>
+          </tr>
+    
+          <tr>
+            <td><input type="button" value="1" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="2" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="3" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="-" class="operator" onclick="get_calc(this)"></td>
+          </tr>
+    
+          <tr>
+            <td><input type="button" value="0" onclick="get_calc(this);myfunc1()"></td>
+            <td><input type="button" value="C" onclick="get_calc(this);myfunc3()"></td>
+            <td><input type="button" value="=" class="equal" onclick="get_calc(this);myfunc2()"></td>
+            <td><input type="button" value="+" class="operator" onclick="get_calc(this)"></td>
+          </tr>
+
+        </table>
+      </form>
+      <h1 id="myh1">　 計算してみよう！</h1>
+    
+   
+      <script>
+       var myfunc1 = function(){
+       var myh1 = document.getElementById("myh1");
+       myh1.innerHTML = " 　 計算中です！";
+       }
+       var myfunc2 = function(){
+　　   myh1.innerHTML = "　計算結果が出ました！";
+       }
+       var myfunc3 = function(){
+       myh1.innerHTML = " 　 計算してみよう！";
+       } 
+
+        
+      </script>
+
+      <script src="mission5-dentaku.js"></script>
+    </body>
+    </html>
